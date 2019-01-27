@@ -1,0 +1,508 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* 
+
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+
+*/
+
+
+/* General Body styling */
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+button {
+    color: white;
+    background-color: rgba(24, 51, 153, 0.78);
+    font-size: .9rem;
+    border: none;
+    width: 160px;
+    height: 50px;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, ul, button, input[type="submit"] {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1, h2, h3, ul {
+    color: #000000;
+}
+
+header h1, header h2, header nav, .menu li a, header .socialMediaNav.i, .iconGallery {
+    color: #fff;
+}
+
+
+/* Header styling starts here */
+header {
+    min-height: 100vh;
+    background-image: url("deskAssets/image-1@2x.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* padding-top: 1px; */
+}
+
+/* header: .logo & siteNav styling starts here */
+.logo {
+   /* position: relative; */
+   font-size: 2rem;
+   font-style: italic;
+   font-weight: 500;
+   padding: 15px 0 0 4%;
+   width: calc((100% - 8%) / 2);
+}
+.logo, .menu li {
+    float: left;
+}
+
+header .siteNav {
+    float: right;
+    width: calc((100% - 8%) / 2);
+    margin-right: -12%;
+}
+
+nav .menu {
+    padding: 15px 0 0 0;
+    font-weight: 600;
+    
+}
+.menu li {
+    /* position: relative; */
+    /* padding: 15px; */
+    /* margin: 0; */
+    /* display: inline-block; */
+}
+
+.menu li a {
+    margin: 20px;
+    display: inline-block;
+}
+
+/* header: siteTitle styling starts here */
+
+header .siteTitle{
+    clear: both;
+    padding-top: 9%;
+}
+
+.siteTitle h1 {
+    text-align: center;
+    margin: 0
+}
+
+.siteTitle .one {
+    font-size: 11.35rem;
+    font-style: italic;
+    /* padding: 0; */
+    /* line-height: 50px; */
+} 
+
+ .siteTitle .mag {
+    font-size: 7.5rem;
+    margin-top: -5rem;
+    font-weight: 500;
+}
+
+/* header: .socialMediaNav icons */
+.socialMediaNav {
+    padding-top: 2.5%;
+}
+
+header .socialMediaNav i {
+    clear: both;
+    float: right;
+    font-size:  1.5rem;
+    width: 50px; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* firstsection: .articles styling begins here*/
+
+/* section .articles {
+    padding: 100px 0;
+}  */
+
+
+/* firstsection: .articles imgs styling */
+.articles .wrapper {
+    width: calc(100% - 20% - 80px);
+    /* border: 2px double dodgerblue; */
+}
+.articles h2 {
+    font-weight: 600px;
+    font-size: 2.45rem;
+    padding: 7% 0;
+    text-align: center;
+}
+
+/* .articles  {
+ background-color: gold;
+ border: 2px dotted darkorchid;
+} */
+
+.image-item {
+    /* background-color: coral; */
+    width: calc((100% - 80px) / 3);
+    float: left;
+    margin: 0 20px;
+}
+
+.articles .image-item:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.articles .image-item:nth-of-type(3) {
+    margin-right: 0;
+    float: right;
+}
+
+.articles img {
+    /* border: 2px solid tomato; */
+    width: 100%;
+}
+
+/* first section: .highlight img & article styling */
+
+/* .highlight {
+    background-color: tomato;
+} */
+
+.highlightsImage {
+    width: calc(100% - 75%);
+    float: left;
+    padding: 5% 2% 5% 0;
+    /* margin-left: 1.5%; */
+}
+
+.highlightsText {
+    /* border: 2px solid green; */
+    width: 75%;
+    float: left;
+    margin-top: 5%;
+}
+
+.highlightsText h2, .highlightsText p {
+    /* border: 2px solid white; */
+    text-align: left;
+}
+
+.highlightsText h2 {
+    font-size: 2.1rem;
+    padding: 0;
+}
+
+.highlightsText p {
+    margin-top: -1.5%;
+}
+
+.highlightsText button {
+    margin-top: -10px;
+}
+
+/* section2-.fullbleedArticles styling */
+.fullbleedArticles {
+    width: 100%;
+}
+/* .trends styling */
+.trends {
+    background-color: silver;
+    /* border: 2px solid limegreen; */
+}
+
+.trends img {
+    width: calc(100% - 47.5%);
+    float: right;
+    margin-right: -2.5%;
+}
+
+.trendsText {
+    /* border: 2px solid navy; */
+    width: calc((100% - 55%) - 10.5%);
+    float: left;
+    padding: 5% 0 5% 0;
+    margin-left: 10.5%;
+}
+
+.trendsText h3 {
+    /* border: 2px solid gold; */
+    font-size: 1.75rem;
+    width: 55%;
+    margin-top: 10%;
+}
+
+.trendsText p {
+    /* border: 2px solid red; */
+    margin-top: 0;
+}
+
+/* .behindScenes styling startd here */
+
+.behindScenes {
+    background-color: silver;
+    /* border: 2px solid limegreen; */
+    width: 100%;
+}
+
+.behindScenes img {
+    width: calc(100% - 47.5%);
+    float: left;
+    margin-left: -2.5%;
+}
+
+.behindScenesText {
+    /* border: 2px solid navy; */
+    width: calc((100% - 55%) - 10.5%);
+    float: right;
+    padding: 5% 0 5% 0;
+    margin-right: 10.5%;
+}
+
+.behindScenesText h3 {
+    /* border: 2px solid gold; */
+    font-size: 1.75rem;
+    
+    margin-top: 10%;
+}
+
+.behindScenesText p {
+    /* border: 2px solid red; */
+    margin-top: 4%;
+}
+
+.behindScenesText button {
+    margin-top: 3%;
+}
+
+/* fullbleedArticles styling ends here */
+
+/* iconGallery section styling begins here */
+
+.iconGallery {
+    background-image: url("deskAssets/oscar-aguilar-327500-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.iconItem {
+   width: calc((100% - 32%) / 3);
+   float: left; 
+   font-size: 1.55rem;
+   padding: 6% 0;
+}
+
+.iconItem i {
+    font-size:2.85rem;  
+}
+
+.iconGallery .iconItem:nth-of-type(1) {
+    margin-left: 11%;
+}
+
+.iconGallery .iconItem:nth-of-type(2) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.iconGallery .iconItem:nth-of-type(3) {
+    margin-right: 11%;
+    float: right;
+}
+
+.iconItem p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+/* Footer styling begins here */
+
+/* contactInformation - the footerwrapper of all 3 divs */
+footer .contactInformation {
+    /* border: 2px solid tomato; */
+    background-color: #e3e3e3;
+    padding: 5% 0;
+    font-size: 1rem;
+}
+
+/* .subscribe / FORM styling begins here */
+.subscribe {
+    /* border: 2px solid purple; */
+    width: calc(100% - 60%);
+    margin-left: 11%;
+    float: left;
+}
+
+.subscribe h3, 
+.contact h3 {
+    padding-bottom: 10px;
+}
+.subscribe p, 
+.contact p {
+    font-size: .95rem;
+    margin: 0;
+    padding-bottom: 7px;
+}
+
+form {
+    width: 100%;
+    position: relative;
+   
+}
+
+input[type="email"] {
+    width: calc(100% - 25%);
+    height: 50px;
+    padding-left: 15px;
+}
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: #1f2022;
+    font-size: .95rem;
+}
+
+input[type="submit"] {
+    width: calc(100% - 75%);
+    font-size: .95rem;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+    
+/* //footerForm ends here */
+
+/* contact styling begins here */
+.contact {
+    /* border: 2px solid green; */
+    width: calc(100% - 79%);
+    margin: 0 5%;
+    padding:0;
+    float: left;   
+}
+
+/* bottomNav styling begins here*/
+
+.bottomNav {
+    /* background-color: hotpink; */
+    width: calc(100% - 93%);
+    margin-right: 11%;
+    float: right;
+    text-align: right;
+    
+}
+
+/* copyright styling */
+.copyright {
+    background: #acacac;
+    font-size: .9rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px;
+}
+
+
+
+/* media queries */
+
+
+/* 1400 */
+@media(max-width: 1400px) {
+    article .highlightsImage,
+    .highlightsImage img,
+    .highlightsText {
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .highlightsText,
+    .trendsText {
+        text-align: center;
+    }
+    
+    .highlightsImage img,
+    .highlightsText,
+    .trends img,
+    .trendsText {
+        padding-top: 5%;
+    }
+
+    .highlightsText p {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+    }
+    
+    .highlightsText button {
+        height: 70px;
+        margin: 0 0 5% 0;    
+    }
+
+    .trendsText, 
+    .trends img,
+    .behindScenesText, 
+    .behindScenes img  {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .trendsText h3,
+    .behindScenesText h3 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*  */
