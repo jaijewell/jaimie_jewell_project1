@@ -68,7 +68,7 @@ header h1, header h2, header nav, .menu li a, header .socialMediaNav.i, .iconGal
 /* Header styling starts here */
 header {
     min-height: 80vh;
-    background-image: url("deskAssets/image-1@2x.jpg");
+    background-image: url("assets/deskHeaderBg@2x.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -161,8 +161,9 @@ header .socialMediaNav li {
 /* firstsection: .articles styling begins here*/
 
 /* firstsection: .articles imgs styling */
-.articles.wrapper {
+.articles .wrapper {
     width: calc(100% - 20% - 80px);
+    margin: 0 12.5%;
     /* border: 2px double dodgerblue; */
 }
 .articles .newsSection {
@@ -300,7 +301,7 @@ header .socialMediaNav li {
 /* iconGallery section styling begins here */
 
 .iconGallery {
-    background-image: url("deskAssets/oscar-aguilar-327500-unsplash.jpg");
+    background-image: url("assets/deskIconGalleryBg@3x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
