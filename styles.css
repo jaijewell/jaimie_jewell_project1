@@ -144,13 +144,18 @@ header .siteTitle{
 
 }
 
-header .socialMediaNav i {
+header .socialMediaNav li {
+    color: white;
     clear: both;
     float: right;
     font-size:  1.5rem;
     width: 50px; 
     text-align: center;
-    padding: 10px;
+    padding: 0 10px 10px 0;
+}
+
+.socialMediaNav li a {
+    color: white;
 }
 
 /* firstsection: .articles styling begins here*/
@@ -399,9 +404,9 @@ input[type="submit"] {
 /* contact styling begins here */
 .contact {
     /* border: 2px solid green; */
-    width: calc(100% - 79%);
-    margin: 0 5%;
-    padding:0;
+    width: calc(100% - 72%);
+    margin: 0 0 0 5%;
+    padding-right: 0;
     float: left;   
 }
 
@@ -409,7 +414,7 @@ input[type="submit"] {
 
 .bottomNav {
     /* background-color: hotpink; */
-    width: calc(100% - 93%);
+    width: calc(100% - 95%);
     margin-right: 11%;
     float: right;
     text-align: right;
@@ -437,10 +442,9 @@ input[type="submit"] {
 
 /* 1400 */
 
-@media(max-width: 1400px) {
+@media(max-width: 1500px) {
     /* header */
     /* .siteTitle {
-
     } */
     
     
@@ -497,8 +501,64 @@ input[type="submit"] {
     .trendsText h3,
     .behindScenesText h3 {
         width: 100%;
-        margin: 0;
+       margin: 0;
     }
 }
 
-/*  */
+
+@media(max-width: 1100px) {
+    .highlightsText p,
+    .trendsText p,
+    .behindScenesText p {
+        padding: 0 5%;
+    }
+
+    .behindScenes img {
+        padding-top: 0;
+    }
+
+    .subscribe {
+        float: none;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    form {
+        height:112px;
+    }
+
+    .subscribe input[type="email"],
+    .subscribe input[type="submit"] {
+        height: 50px;
+        width: 75%;
+        margin: 0 12%;
+    }
+
+    .subscribe input[type="email"] {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: #232323;
+    }
+    .subscribe input[type="submit"] {
+        margin-top: 12px;
+        margin-bottom: 5%;
+        top: 50px;
+        left: 7px;
+        font-family: 'Catamaran', sans-serif;
+        font-weight: bold;
+    }
+
+    .contact {
+        margin-left: 13%;
+    }
+    .bottomNav {
+        margin-right: 13%;
+        width: 15%;
+        
+    }
+    .bottomNav ul li {
+        text-align: right;
+    }
+
+}
