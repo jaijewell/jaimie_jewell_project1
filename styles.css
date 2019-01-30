@@ -103,7 +103,6 @@ header {
 }
 .logo, .menu li {
     float: left;
-    
 }
 
 .siteNav {
@@ -133,7 +132,6 @@ nav .menu {
     display: block;
     transition: color 1s ease, background 1s ease;
 }
-
 
 /* header: siteTitle styling starts here */
 
@@ -541,6 +539,7 @@ input[type="submit"] {
         text-align: center;
         color: #232323;
     }
+
     .subscribe input[type="submit"] {
         margin-top: 12px;
         margin-bottom: 5%;
@@ -554,11 +553,13 @@ input[type="submit"] {
         margin-left: 13%;
         width: calc((100% - 15%) - 26%);
     }
+
     .bottomNav {
         margin-right: 13%;
         width: 15%;
         
     }
+
     .bottomNav ul li {
        float: none;
         margin: 0;
@@ -640,10 +641,12 @@ input[type="submit"] {
      .socialMediaNav {
         padding-top: 5%;
     }
+    
     header .socialMediaNav li {
         padding: 0 5px 5px 0;
         font-size: .9rem;
     }
+
     .articles .image-item {
         width: calc((100% - 55px) / 2);
         margin: 10% 0;
@@ -676,6 +679,7 @@ input[type="submit"] {
     .iconGallery i {
         font-size: 2rem;
     }
+
     .iconItem p {
         font-size: 1rem;
     }
@@ -691,6 +695,7 @@ input[type="submit"] {
     .hamburger {
         margin-right: 0%;
     }
+
     .hamburger img {
         width: 50%;
     }
@@ -712,35 +717,34 @@ input[type="submit"] {
         margin-top:-3rem;
     }
 
-     .socialMediaNav {
-       display: none;
-     }
+    .socialMediaNav {
+        display: none;
+    }
 
-     .articles .newsSection {
-         font-size:1.75rem;
-         padding: 5% 0;
-     }
+    .articles .newsSection {
+        font-size:1.75rem;
+        padding: 5% 0;
+    }
 
-     .highlightsText h2 {
+    .highlightsText h2 {
         font-size: 1.65rem;
         text-align: center;
         padding: 5% 0;
         width: 100%;
+    }
 
-     }
-
-     .trendsText h3, 
-     .behindScenesText h3 {
-         font-size: 1.1rem;
-         padding: 0 5%;
-         width: 100%;
+    .trendsText h3, 
+    .behindScenesText h3 {
+        font-size: 1.1rem;
+        padding: 0 5%;
+        width: 100%;
     }
      
-     .highlightsText p,
-     .trendsText p,
-     .behindScenesText p {
-         font-size: .9rem;
-         padding: 0 2%;
+    .highlightsText p,
+    .trendsText p,
+    .behindScenesText p {
+        font-size: .9rem;
+        padding: 0 2%;
     }
 
     .articles .wrapper {
@@ -749,8 +753,8 @@ input[type="submit"] {
     }
      
     .articles .highlightsText p {
-         text-align: left;
-         margin-bottom: 5%;
+        text-align: left;
+        margin-bottom: 5%;
     }
 
     .iconGallery {
@@ -762,7 +766,8 @@ input[type="submit"] {
     .iconGallery p {
         font-size: 1.35rem;
     }
-     .iconItem {
+
+    .iconItem {
         padding: 2% 0;
         display: block;
         width: 100%;
@@ -770,10 +775,9 @@ input[type="submit"] {
 
     .iconItem i {
          font-size:2.5rem;
-     }
+    }
 
-    .iconGallery .iconItem:nth-of-type(1)
-    ,
+    .iconGallery .iconItem:nth-of-type(1),
     .iconGallery .iconItem:nth-of-type(2),
     .iconGallery .iconItem:nth-of-type(3){
         margin: 0 auto;
@@ -841,14 +845,15 @@ input[type="submit"] {
     footer .contact h3 {
         font-size: 1rem;
     }
+
     footer .contact p {
         font-size: .6rem;
     }
+
     footer .bottomNav {
         font-size: .8rem;
         margin-right: 7%;
-        /* text-align: right; */
-        }
+    }
 }
 
 @media(max-width: 350px) {
