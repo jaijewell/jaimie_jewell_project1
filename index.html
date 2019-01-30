@@ -16,8 +16,10 @@
             <div class="logo">
                 <h2>One</h2>
             </div>
+            <p class="hamburger"><img src="assets/hamburgerMenu@3x.png"></p>
             <nav class="siteNav">
                 <ul class="menu clearfix">
+                    <li class="exitResponsive"><i class="fas fa-times"></i></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Blog</a></li>
@@ -134,10 +136,10 @@
             <div class="bottomNav">
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Blog</li>
-                        <li>Gallary</li>
-                        <li>Contact</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Gallary</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
                 </nav> <!-- bottomNav nav closes -->
             </div> <!-- bottomNav div closes -->
@@ -146,5 +148,19 @@
             <p>Copyright &copy 2019 HackerYou</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>   
+    $(document).ready(function () {
+        $('.hamburger').on('click', function () {
+            $('.siteNav').toggleClass('show');
+        });
+
+        $('.exitResponsive').on('click', function () {
+            $('.siteNav').toggleClass('show');
+        });
+    });     
+    
+    
+    </script>
 </body>
 </html>
