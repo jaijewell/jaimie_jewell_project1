@@ -161,7 +161,6 @@ nav .menu {
 /* header: .socialMediaNav icons */
 .socialMediaNav {
     padding: 2.5% 2.5% 0 0;
-
 }
 
 .socialMediaNav li {
@@ -179,14 +178,13 @@ nav .menu {
 }
 /* header styling ends here */
 
-
 /* firstsection: .articles styling begins here*/    
 /* firstsection: .articles imgs styling */
 .articles .wrapper {
     width: calc(100% - 20% - 80px);
     margin: 0 12.5%;
-
 }
+
 .articles .newsSection {
     font-weight: 600px;
     font-size: 2.45rem;
@@ -233,8 +231,13 @@ nav .menu {
     padding: 0;
 }
 
+.highlightsText p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .highlightsText button {
-    margin: 2.5% 0;
+    margin: 1% 0 2.5% 0;
 }
 /* section1-.articles styling ends here */
 
@@ -731,25 +734,24 @@ input[type="submit"] {
          font-size: 1.1rem;
          padding: 0 5%;
          width: 100%;
-     }
+    }
      
      .highlightsText p,
      .trendsText p,
      .behindScenesText p {
          font-size: .9rem;
          padding: 0 2%;
-     }
+    }
 
-     .articles .wrapper {
+    .articles .wrapper {
         margin: 5% 0;
         width: 100%;
-     }
-
+    }
      
-     .articles .highlightsText p {
+    .articles .highlightsText p {
          text-align: left;
          margin-bottom: 5%;
-     }
+    }
 
     .iconGallery {
         background-image: url(assets/iconGalleryBg@3x.jpg);
@@ -764,9 +766,9 @@ input[type="submit"] {
         padding: 2% 0;
         display: block;
         width: 100%;
-     }
+    }
 
-     .iconItem i {
+    .iconItem i {
          font-size:2.5rem;
      }
 
@@ -777,6 +779,7 @@ input[type="submit"] {
         margin: 0 auto;
         float: none;
     }
+
     footer .contactInformation {
         color: #050505;
     }
@@ -796,6 +799,7 @@ input[type="submit"] {
         font-size: .7rem;
         line-height: 1.57;
     }
+
     footer .bottomNav {
         font-size: 1rem;
         line-height: 1.45;
@@ -805,7 +809,6 @@ input[type="submit"] {
         font-size: .7rem;
         color: #000000;
         padding: 5px;
-
     }
 
 @media(max-width: 450px) {
@@ -828,7 +831,6 @@ input[type="submit"] {
     .subscribe input[type="submit"] {
         top: 40px;
         left: 0;
-
     }
 
 
@@ -847,10 +849,7 @@ input[type="submit"] {
         margin-right: 7%;
         /* text-align: right; */
         }
-
-
 }
-
 
 @media(max-width: 350px) {
     header .siteTitle {
@@ -880,7 +879,6 @@ input[type="submit"] {
         width: 318px;
         top: 50px;
         left: 9px;
-
     }
 
 }
