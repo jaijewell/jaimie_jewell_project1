@@ -117,7 +117,7 @@ nav .menu {
 
 /* header: siteTitle styling starts here */
 
-header .siteTitle{
+.siteTitle{
     clear: both;
     padding-top: 7.5%;
 }
@@ -144,7 +144,7 @@ header .siteTitle{
 
 }
 
-header .socialMediaNav li {
+.socialMediaNav li {
     color: white;
     clear: both;
     float: right;
@@ -347,7 +347,6 @@ footer .contactInformation {
 form {
     width: 100%;
     position: relative;
-   
 }
 
 input[type="email"] {
@@ -372,9 +371,8 @@ input[type="submit"] {
     color: white;
     border: none;
     cursor: pointer;
-}
-  
-    
+}   
+
 /* //footerForm ends here */
 
 /* contact styling begins here */
@@ -533,6 +531,7 @@ input[type="submit"] {
 
     .contact {
         margin-left: 13%;
+        width: calc((100% - 15%) - 26%);
     }
     .bottomNav {
         margin-right: 13%;
@@ -542,9 +541,79 @@ input[type="submit"] {
     .bottomNav ul li {
         text-align: right;
     }
+}
+
+@media(max-width: 955px) {
+/* HAMBURGER MENU */
+
+    .siteTitle {
+        padding-top: 20%;
+    }
+
+    .siteTitle .one {
+        font-size: 10rem;
+    }
+
+    .siteTitle .mag {
+        font-size: 6rem;
+        margin-top:-4rem;
+    }
+
+     .socialMediaNav {
+        padding-top: 5%;
+    }
+    header .socialMediaNav li {
+        padding: 0 5px 5px 0;
+        font-size: .9rem;
+    }
+    .articles .image-item {
+        width: calc((100% - 50px) / 2);
+        margin: 2%;
+    }
+
+    .articles .image-item:nth-of-type(3){
+        display: none;
+    }
+    /* .articles .image-item:last-child{
+        margin-right: 0;
+    } */
+
+    .articles .image-item:nth-of-type(2){
+        float: right
+       
+
+    }
+
+    .highlightsImage img {
+        display: none;
+    }
+
+    .highlightsImage {
+        background-image: url('assets/deskHighlightArticle.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+       
+    }
+
+    /* .highlightsImage img {
+        width: 100%;
+        margin: 0 auto;
+    } */
+
+    .highlightsText p {
+        padding: 0;
+    }
+
+    .iconGallery i {
+        font-size: 2rem;
+    }
+    .iconItem p {
+        font-size: 1rem;
+    }
 
 
-/* media query 958*/
 
 
 }
